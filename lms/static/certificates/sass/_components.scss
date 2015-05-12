@@ -213,7 +213,7 @@ a.btn {
 // ------------------------------
 .introduction {
     margin-bottom: spacing-vertical(base);
-    text-align: center;
+    @include text-align(center);
 }
 
 // ------------------------------
@@ -280,7 +280,7 @@ a.btn {
     border-bottom: rem(2) solid palette(grayscale-cool, x-light);
     padding-bottom: spacing-vertical(x-small);
     color: $cert-base-color;
-    text-align: center;
+    @include text-align(center);
 }
 
 .accomplishment-rendering {
@@ -291,7 +291,7 @@ a.btn {
 
     // type
     .accomplishment-type {
-        text-align: center;
+        @include text-align(center);
         margin-bottom: spacing-vertical(base);
     }
 
@@ -318,7 +318,7 @@ a.btn {
     // statement
     .accomplishment-statement {
         @extend %rendering-section;
-        text-align: center;
+        @include text-align(center);
     }
 
     .accomplishment-statement-lead {
@@ -382,7 +382,7 @@ a.btn {
         }
 
         .signatory-name, .signatory-credentials {
-            text-align: center;
+            @include text-align(center);
         }
 
         .signatory-name {
@@ -576,7 +576,7 @@ a.btn {
     }
 
     .accomplishment-rendering {
-        background: palette(grayscale, white-t) url('/static/certificates/images/bg-distinguished.png') center no-repeat;
+        background: palette(grayscale, white-t) url('../images/bg-distinguished.png') center no-repeat;
         background-size: 65%;
 
         .deco-corner-tl {

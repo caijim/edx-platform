@@ -24,7 +24,7 @@ document_body_class = document_body_class_append if document_body_class_append e
 
 <body class="layout-accomplishment view-valid-accomplishment ${dir_rtl} ${document_body_class} certificate certificate-distinguished" data-view="valid-accomplishment">
 
-    <div class="wrapper-view">
+    <div class="wrapper-view" dir="${dir_rtl}">
 
         <%include file="_accomplishment-header.html" />
 
@@ -36,6 +36,5 @@ document_body_class = document_body_class_append if document_body_class_append e
 
         <%include file="_accomplishment-footer.html" />
     </div>
-    <%include file="_assets-secondary.html" />
 </body>
 </html>

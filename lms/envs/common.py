@@ -1325,6 +1325,18 @@ PIPELINE_CSS = {
         ],
         'output_filename': 'css/lms-style-xmodule-annotations.css',
     },
+    'style-certificates': {
+        'source_filenames': [
+            'certficates/css/main-ltr.css',
+        ],
+        'output_filename': 'css/certificates-style.css',
+    },
+    'style-certificates-rtl': {
+        'source_filenames': [
+            'certficates/css/main-rtl.css',
+        ],
+        'output_filename': 'css/certificates-style-rtl.css',
+    },
 }
 
 

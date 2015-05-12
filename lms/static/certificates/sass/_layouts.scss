@@ -40,7 +40,7 @@
 
 .header-app-title {
     margin: 0;
-    text-align: center;
+    @include text-align(center);
 }
 
 // banner
@@ -60,10 +60,10 @@
 }
 
 .banner-user {
-    text-align: center;
+    @include text-align(center);
 
     @include susy-breakpoint($bp-large, $susy) {
-        text-align: left;
+        @include text-align(left);
     }
 
     .wrapper-copy-and-actions {
@@ -119,7 +119,7 @@
             @include susy-breakpoint($bp-medium, $susy) {
                 display: inline-block;
                 vertical-align: middle;
-                margin-right: spacing-horizontal(base);
+                @include margin-right(spacing-horizontal(base));
                 margin-bottom: 0;
             }
         }
@@ -128,7 +128,7 @@
     .list-legal {
 
         @include susy-breakpoint($bp-medium, $susy) {
-            text-align: right;
+            @include text-align(right);
         }
     }
 }
@@ -180,7 +180,7 @@
         margin-bottom: 0;
 
         .wrapper-orgs {
-            text-align: center;
+            @include text-align(center);
         }
 
         .wrapper-organization {
@@ -188,10 +188,10 @@
             vertical-align: middle;
             width: span(6);
             height: rem(100);
-            margin-right: spacing-horizontal(base);
+            @include margin-right(spacing-horizontal(base));
 
             &:last-child {
-                margin-right: 0;
+                @include margin-right(0);
             }
 
             @include susy-breakpoint($bp-medium, $susy) {
@@ -225,7 +225,7 @@
     .accomplishment-signatories {
 
         .wrapper-signatories {
-            text-align: center;
+            @include text-align(center);
         }
 
         .signatory {
@@ -296,7 +296,7 @@
 
             .accomplishment-type-symbol {
                 @include size(rem(50));
-                margin-right: spacing-horizontal(base);
+                @include margin-right(spacing-horizontal(base));
             }
         }
     }

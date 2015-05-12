@@ -1327,13 +1327,13 @@ PIPELINE_CSS = {
     },
     'style-certificates': {
         'source_filenames': [
-            'certficates/css/main-ltr.css',
+            'certificates/css/main-ltr.css',
         ],
         'output_filename': 'css/certificates-style.css',
     },
     'style-certificates-rtl': {
         'source_filenames': [
-            'certficates/css/main-rtl.css',
+            'certificates/css/main-rtl.css',
         ],
         'output_filename': 'css/certificates-style-rtl.css',
     },
